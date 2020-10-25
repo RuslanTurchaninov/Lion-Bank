@@ -1,7 +1,37 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    color:#fff
+    color:#fff;
     font-size: 16px;
     line-height: 1.42;
     background: #001821;
- }
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+}
+
+.header {
+    height: 120px;
+    position: relative;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    top: 57px;
+    left: 0;
+}
+
+.menu {
+    position: absolute;
+    top: 65px;
+    left: 250;
+}
+
+.contacts {
+    position: absolute;
+    top: 48px;
+    right: 0;
+}
