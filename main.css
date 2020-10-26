@@ -12,6 +12,11 @@ a {
     color: inherit;
 }
 
+.footer {
+    height: 120px;
+    position: relative;
+}
+
 .header {
     height: 120px;
     position: relative;
