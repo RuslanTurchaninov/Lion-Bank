@@ -12,6 +12,20 @@ a {
     color: inherit;
 }
 
+.container {
+    margin: 0 auto;
+    widht: 1150px;
+}    
+
+ul {
+    padding: 0;
+    margin: 0;
+}    
+
+ul li {
+    list-style: none;
+}
+
 .footer {
     height: 120px;
     position: relative;
@@ -39,4 +53,19 @@ a {
     position: absolute;
     top: 48px;
     right: 0;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+
+.menu__link {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: #FFFFFF;
 }
