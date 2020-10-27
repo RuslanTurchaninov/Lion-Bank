@@ -1,9 +1,9 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', Helvetica, sans-serif;
     color:#fff;
     font-size: 16px;
     line-height: 1.42;
-    background: #001821;
+    background: #29292c;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,21 +26,22 @@ ul li {
     list-style: none;
 }
 
-.footer {
-    height: 120px;
-    position: relative;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
 }
 
 .header {
     height: 120px;
     position: relative;
+    margin-bottom: 150px;
 }
 
 .logo {
     display: block;
     position: absolute;
     top: 57px;
-    left: 0px;
+    left: 0;
 }
 
 .menu {
@@ -67,5 +68,54 @@ ul li {
 }
 
 .menu__link:hover {
-    color: #FFFFFF;
+    color: #dfb56d;
 }
+
+.contacts {
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration: underline;
+    color: #dfb56d;
+}
+
+.hero__text-section {
+    width: 400px;
+}
+
+.hero__title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.hero__subtitle {
+    font-size: 18px;
+    color: #dfb56d;
+    margin-bottom: 45px;
+}
+
+.btn {
+    background: #dfb56d;
+    border-radius: 4px;
+    padding: 18px 39px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+   background: #d3a556;
+   box-shadow: 0 0 25px 0 #dfb56d;
+}  
