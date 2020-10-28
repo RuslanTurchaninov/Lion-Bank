@@ -14,7 +14,7 @@ a {
 
 .container {
     margin: 0 auto;
-    widht: 1150px;
+    widht: 1140px;
 }    
 
 ul {
@@ -31,35 +31,49 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .header {
     height: 120px;
     position: relative;
-    margin-bottom: 150px;
+    margin-bottom: 156px;
 }
 
 .logo {
     display: block;
     position: absolute;
-    top: 57px;
+    top: 44px; top: 57;
     left: 0;
 }
 
 .menu {
     position: absolute;
-    top: 65px;
-    left: 250px;
+    top: 47px;
+    left: 261px;
 }
 
 .contacts {
     position: absolute;
-    top: 48px;
+    top: 30px;
     right: 0px;
+    font-style: normal;
+    text-align: right;
 }
 
 .menu__item {
     display: inline-block;
     vertical-align: middle;
     margin-right: 50px;
+}
+
+.menu__item--active .menu__link {
+    color: #dfb56d;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
 }
 
 .menu__link {
@@ -69,11 +83,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__link:hover {
     color: #dfb56d;
-}
-
-.contacts {
-    font-style: normal;
-    text-align: right;
 }
 
 .contacts__phone {
@@ -95,14 +104,14 @@ h1, h2, h3, h4, h5, h6 {
 .hero__title {
     font-size: 48px;
     font-weight: bold;
-    line-height: 1.1;
+    line-height: 1.2;
     margin-bottom: 18px;
 }
 
 .hero__subtitle {
     font-size: 18px;
     color: #dfb56d;
-    margin-bottom: 45px;
+    margin-bottom: 63px;
 }
 
 .btn {
@@ -113,9 +122,54 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    display: inline-block;
 }
 
 .btn:hover {
    background: #d3a556;
    box-shadow: 0 0 25px 0 #dfb56d;
 }  
+
+.section {
+    margin-bottom: 138px;
+}
+
+.section__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.offers__item {
+    min-height: 470px;
+    background: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 22px;
+    width: 362px;
+}
+
+.offers__item:last-child {
+    margin-right: 0;
+}
+
+.offers__header {
+    min-height: 162px;
+    margin-bottom: 28px;
+}
+
+.offers__content {
+    padding: 36px 30px;
+    color: #010001;
+}
+
+.offers__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.offers__prices-cell {
+    display: inline block;
+    vertical-align: top;
+}
