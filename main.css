@@ -191,3 +191,7 @@ h1, h2, h3, h4, h5, h6 {
 .offers__prices {
     margin-bottom: 50px;
 }
+
+.offers__btn-wrapper {
+    text-align: center;
+}
