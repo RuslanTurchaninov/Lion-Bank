@@ -242,4 +242,16 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.news__item {
+    width: 555px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
 
+.news__cover {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
