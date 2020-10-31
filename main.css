@@ -145,7 +145,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     border-radius: 4px;
     display: inline-block;
-    margin-right: 22px;
+    margin-right: 28px;
     width: 362px;
 }
 
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .offers__prices-cell {
-    display: inline block;
+    display: inline-block;
     vertical-align: top;
     width: 115px;
     margin-right: 30px;
