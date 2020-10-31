@@ -145,8 +145,9 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     border-radius: 4px;
     display: inline-block;
-    margin-right: 28px;
+    margin-right: 22px;
     width: 362px;
+    color: #010001;
 }
 
 .offers__item:last-child {
@@ -160,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .offers__content {
     padding: 36px 30px;
-    color: #010001;
 }
 
 .offers__title {
@@ -178,4 +178,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .offers__prices-cell:last-child {
     margin-right: 0;
+}
+
+.offers__price {
+    font-size: 36px;
+}
+
+.offers__prices-desk {
+    color: #333;
+}
+
+.offers__prices {
+    margin-bottom: 50px;
 }
