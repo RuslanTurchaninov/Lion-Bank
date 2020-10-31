@@ -242,8 +242,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.news {
-
 .news__item {
     width: 555px;
     display: inline-block;
@@ -280,4 +278,36 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 5px;
+}
+
+.pager {
+    text-align: center;
+}
+
+.pager__display,.pager__list {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__display {
+    margin-right: 26px;
+}
+
+.pager__item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.pager__item--active .pager__link {
+    background: #353538;
+}
+
+.pager__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+
 }
