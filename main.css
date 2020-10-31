@@ -157,6 +157,15 @@ h1, h2, h3, h4, h5, h6 {
 .offers__header {
     min-height: 162px;
     margin-bottom: 28px;
+    position: relative;
+}
+
+.offers__header-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -44px;
+    margin-top: -32px;
 }
 
 .offers__content {
