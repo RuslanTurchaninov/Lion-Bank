@@ -160,16 +160,41 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 22px;
     width: 362px;
     color: #010001;
+    overflow: hidden;
 }
 
 .offers__item:last-child {
     margin-right: 0;
 }
 
+.offers__item--theme--grey .offers__header:before {
+    background: #a5a5a4;
+}
+
+.offers__item--theme--blue .offers__header:before {
+    background: #556180;
+}
+
+.offers__item--theme--gold .offers__header:before {
+    background: #978455;
+}
+
 .offers__header {
     min-height: 162px;
     margin-bottom: 28px;
     position: relative;
+}
+
+.offers__header::before {
+    content: "";
+    width: 284px;
+    height: 284px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -131px;
+    right: -109px;
+    background: #ccc;
 }
 
 .offers__header-img {
@@ -216,4 +241,5 @@ h1, h2, h3, h4, h5, h6 {
 .offers__btn-wrapper {
     text-align: center;
 }
+
 
