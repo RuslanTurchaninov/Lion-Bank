@@ -202,6 +202,9 @@ $s3: .3s ease all;
 
 .button-menu {
   display: none;
+  position: relative;
+  z-index: 110;
+  cursor: pointer;
 }
 
 /* style main
@@ -1394,18 +1397,9 @@ $s3: .3s ease all;
     grid-row-end: 3;
   }
 
-  .menu__item {
-    position: fixed;
-  }
-
   .footer__menu, .header__menu {
     width: 100%;
     justify-content: space-between;
-  }
-
-  .header__nav-menu {
-    width: 200px;
-    display: none;
   }
 
   .about-us {
@@ -1496,6 +1490,15 @@ $s3: .3s ease all;
 
   .banner-img {
     height: 230px;
+  }
+
+  .footer__nav-menu, .footer__box-phone {
+    margin: 0;
+    width: 100%;
+  }
+
+  .footer__box-phone {
+    align-items: flex-end;
   }
 }
 
@@ -1683,9 +1686,9 @@ $s3: .3s ease all;
 
   .header__nav-menu {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.89);
+    width: 0;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.95);
     padding: 0;
     top: 0;
     left: 0;
@@ -1693,7 +1696,16 @@ $s3: .3s ease all;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    transition: .6s ease all;
+    overflow: hidden;
+  }
+
+  .header__nav-menu.active {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .header__menu, .menu__item   {
@@ -1715,7 +1727,7 @@ $s3: .3s ease all;
     align-items: center;
   }
 
-  .menu__link {
+  .header__menu .menu__link {
     font-size: 25px;
     line-height: 45px;
   }
@@ -1828,6 +1840,7 @@ $s3: .3s ease all;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    position: relative;
   }
 
   .sandwich-line {
@@ -1836,11 +1849,27 @@ $s3: .3s ease all;
     margin-bottom: 4px;
     display: grid;
     background-color: #fff;
+    transition: .5s ease all;
   }
 
   .sandwich-line:last-child {
     margin-bottom: 0;
   }
+
+  .sandwich-line:nth-child(1).active {
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  .sandwich-line:nth-child(2).active {
+    display: none;
+  }
+
+  .sandwich-line:nth-child(3).active {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
 }
 
 @media screen and (max-width: 550px) {

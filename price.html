@@ -10,13 +10,18 @@
 </head>
 <body>
 <header class="header header__top">
+  <button type="button" class="button-menu" id="mobile-menu" onclick="openMobileMenu()">
+    <span class="sandwich-line"></span>
+    <span class="sandwich-line"></span>
+    <span class="sandwich-line"></span>
+  </button>
   <a href="index.html" class="header__logo-link">
     <img src="img/logo-desktop.png" class="header__logo-img" alt="" title=""/>
   </a>
-  <nav class="header__nav-menu">
+  <nav class="header__nav-menu" id="header-menu">
     <ul class="header__menu">
       <li class="menu__item">
-        <a href="index.html" class="menu__link">Главная</a>
+        <a href="general.html" class="menu__link">Главная</a>
       </li>
       <li class="menu__item">
         <a href="price.html" class="menu__link">Услуги</a>
@@ -163,5 +168,6 @@
     </div>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>
