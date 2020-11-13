@@ -196,7 +196,7 @@ $s3: .3s ease all;
   font-family: $font_bold;
 }
 
-.schedule__title:hover + .schedule__box-content {
+.schedule__title:hover + .schedule__box-content, .schedule__box-content:hover {
   opacity: 1;
 }
 
@@ -746,6 +746,7 @@ $s3: .3s ease all;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-gap: 80px;
+  filter: grayscale(100%);
 }
 
 .feedback__comments {
@@ -1186,35 +1187,35 @@ $s3: .3s ease all;
 }
 
 .soc-list__item:nth-child(1) {
-  background-image: url("../img/icons/telegram.svg");
+  background-image: url("../img/icons/telegram.png");
 }
 
 .soc-list__item:nth-child(2) {
-  background-image: url("../img/icons/vk.svg");
+  background-image: url("../img/icons/vk.png");
 }
 
 .soc-list__item:nth-child(3) {
-  background-image: url("../img/icons/facebook.svg");
+  background-image: url("../img/icons/facebook.png");
 }
 
 .soc-list__item:nth-child(4) {
-  background-image: url("../img/icons/instagram.svg");
+  background-image: url("../img/icons/instagram.png");
 }
 
 .soc-list__item:nth-child(1):hover {
-  background-image: url("../img/icons/telegram-hover.svg");
+  background-image: url("../img/icons/telegram-hover.png");
 }
 
 .soc-list__item:nth-child(2):hover {
-  background-image: url("../img/icons/vk-hover.svg");
+  background-image: url("../img/icons/vk-hover.png");
 }
 
 .soc-list__item:nth-child(3):hover {
-  background-image: url("../img/icons/facebook-hover.svg");
+  background-image: url("../img/icons/facebook-hover.png");
 }
 
 .soc-list__item:nth-child(4):hover {
-  background-image: url("../img/icons/instagram-hover.svg");
+  background-image: url("../img/icons/instagram-hover.png");
 }
 
 .footer__dark {
