@@ -1,3 +1,3 @@
 # Lion-Bank
 
-HTML-CSS-JS
+Реализанно Frontend часть с использованиями технологии HTML, CSS и JasaScript
