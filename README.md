@@ -1,2 +1,3 @@
-# Lion-Bank-HTML-CSS-JS
+# Lion-Bank
 
+HTML-CSS-JS
